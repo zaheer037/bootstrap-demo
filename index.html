@@ -35,7 +35,50 @@
           <li><a href="#pricing">Pricing</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
+              <li><div class="bd-example m-0 border-0">
+    
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                  Registration Form
+                </a>
+                
+                
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <h2>Form Validation Example</h2>
+                    <form id="myForm" onsubmit="return validateForm()">
+                        <label for="username">Username (8-10 characters):</label><br>
+                        <input type="text" id="username" name="username"><br>
+                        <span id="usernameError" class="error"></span><br>
+
+                        <label for="age">Age (greater than 10):</label><br>
+                        <input type="number" id="age" name="age"><br>
+                        <span id="ageError" class="error"></span><br>
+
+                        <label for="pincode">Pincode (6 digits):</label><br>
+                        <input type="text" id="pincode" name="pincode"><br>
+                        <span id="pincodeError" class="error"></span><br>
+
+                        <label for="pan">PAN Number (10 characters, alphanumeric):</label><br>
+                        <input type="text" id="pan" name="pan"><br>
+                        <span id="panError" class="error"></span><br>
+
+                        <label for="password">Password (10 characters, 1 uppercase, 1 special character, 1 digit):</label><br>
+                        <input type="password" id="password" name="password"><br>
+                        <span id="passwordError" class="error"></span><br>
+
+                        <label for="phone">Phone Number (starting with 8):</label><br>
+                        <input type="text" id="phone" name="phone"><br>
+                        <span id="phoneError" class="error"></span><br>
+
+                        <input type="submit" value="Submit">
+                    </form>
+
+                    <script src="script.js"></script>
+                </div>
+                
+                  </div></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#">Deep Dropdown 1</a></li>
